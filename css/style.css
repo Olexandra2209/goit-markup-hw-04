@@ -123,6 +123,13 @@ body {
   background-color: var(--title-text-color);
   padding-bottom: 112px;
   padding-top: 180px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   color: var(--white-color);
@@ -223,6 +230,38 @@ body {
   line-height: 1.2;
   margin-bottom: 8px;
 }
+.text {
+  margin-bottom: 8px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-brand);
+}
+.team-social-link:is(:hover, :focus) {
+  background-color: #404bbf;
+}
+.team-social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+}
 .footer-container {
 }
 .footer {
@@ -284,18 +323,18 @@ body {
   background-color: var(--hover-color);
   color: var(--white-color);
 }
-.link {
+.item {
   text-decoration: none;
   display: block;
 }
-.link .photo-title {
+.item .photo-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-decoration: none;
 }
-.link .photo-text {
+.item .photo-text {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;

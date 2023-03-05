@@ -132,6 +132,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-title {
   color: var(--white-color);
@@ -211,6 +213,8 @@ body {
 .team-images {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .name {
   background-color: var(--white-color);
@@ -269,7 +273,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 16px;
   height: 16px;
 }
@@ -283,7 +286,6 @@ body {
   gap: 24px;
   padding-bottom: 120px;
 }
-
 .customers-item {
   width: 168px;
   height: 88px;
@@ -305,13 +307,13 @@ body {
 .customers-icon {
   fill: currentColor;
 }
-
-.footer-container {
-}
 .footer {
   background-color: var(--title-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.footer .container {
+  display: flex;
 }
 .footer-logo {
   color: var(--primary-brand);
@@ -347,16 +349,12 @@ body {
   margin-bottom: 16px;
 }
 .footer-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 120px;
 }
 .footer-media-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
-
 .footer-media-item {
   width: 40px;
   height: 40px;
@@ -370,7 +368,8 @@ body {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-media-icon {
+.footer-media-link:is(:hover, :focus) {
+  background: #31d0aa;
 }
 .menu {
   padding-bottom: 120px;
@@ -400,6 +399,9 @@ body {
 .button:focus {
   background-color: var(--hover-color);
   color: var(--white-color);
+  border: 0;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .item {
   text-decoration: none;
@@ -424,6 +426,10 @@ body {
 }
 .photo-card {
   flex-basis: calc((100% - 48px) / 3);
+}
+.photo-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .photo-name {
   padding: 32px 0;
